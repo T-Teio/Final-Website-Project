@@ -61,17 +61,83 @@
                         "Data is intact - not modified or corrupted"
                     </p>
                     <p>
+                        Protection against <strong>Unauthorized Modification</strong>. Data must remain accurate and trustworthy from the moment it is created until it is accessed. <br><br> If someone changes your grade in the grade book withought permission, that's an Integrity breach.
+                    </p>
 
+                    <p>
+                        <div class="back-highlight">
+                            <div style="color: #FA003F; margin-bottom: 0.5rem;">REAL-WORLD BREACH</div>
+                            The Stuxnet worm secretly altered code on Iranian centrifuge machines, causing them to spin too fast and physically break - a classic integrity attack.
+                        </div>
                     </p>
                 </div>
 
                 <div class="cia-card" id="cia-cardr">
                     <h3><div id="sonar">&#128225;</div><br><br>Availability</h3>
+                    <p id="subr">
+                        "Data is accessible to allowed users"
+                    </p>
                     <p>
-
+                        Protection against <strong>Denial of service</strong>. Authorized users must be able to access data and systems whenever they legitimately need them.<br><br>A website that is always down, or an account that stays locked, fails the Availability test.
+                    </p>
+                    <p>
+                        <div class="back-highlight">
+                            <div style="color: #FA003F; margin-bottom: 0.5rem;">REAL-WORLD BREACH</div>
+                            The Mirai Botnet used 145,000+ infected cameras and devices to flood security journalist Brian Krebs' website with traffic, crashing it for 4 days - a textbook DDoS / Availability breach.
+                        </div>
                     </p>
                 </div>
             </div>
+            <div id="sf"><p>&#128161;<strong>Security Formula:</strong>Protection = Prevention + (Detection + Response). Every cybersecurity technique fits into at least one of these three elements, and every element maps back to the CIA Triad.</p></div>
+        </section>
+
+        <section id="data">
+            <h4 style="color: deepskyblue;">Protecting Data</h4>
+            <h1 style="margin-bottom: 0.5rem;">The Three States of Data</h1>
+            <p style="color: grey; opacity: 90%; max-width: 35rem;">To choose the right security tool, you need to know what state data is currently in. Data exists in one of three states at any given moment.</p>
+
+            <div class="data-grid">
+
+        <div class="data-card">
+          <div class="data-card-header">
+            <h1>&#128190;</h1>
+            <h3>Data at Rest</h3>
+          </div>
+          <div class="data-card-body">
+            <p>Information stored on hard drives, USB drives, DVDs, or memory — sitting still and not currently being moved or processed.</p>
+            <div id="ex">
+                <p>Example: Saved files on your laptop's hard drive.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-card">
+          <div class="data-card-header">
+            <h1>&#128228;</h1>
+            <h3>Data in Transit</h3>
+          </div>
+          <div class="data-card-body">
+            <p>Data actively moving from one system to another — through a network, the internet, or a local file share connection.</p>
+            <div id="ex">
+                <p>Example: Sending an email or uploading a file to the cloud.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-card">
+          <div class="data-card-header">
+            <h1>&#9881;&#65039;</h1>
+            <h3>Data in Use</h3>
+          </div>
+          <div class="data-card-body">
+            <p>Data currently being processed by an application, held in active RAM, or being created/edited by a user right now.</p>
+            <div id="ex">
+                <p>Example: A Word document you have open, or app data loaded in memory.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="sf"><p>&#128737;Different tools protect different states: <strong>Encryption</strong> for data at rest, <strong>secure protocols (HTTPS/TLS)</strong> for data in transit, and <strong>access controls &amp; authentication</strong> for data in use.</p></div>
         </section>
     </main>
 </body>

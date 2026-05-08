@@ -225,7 +225,8 @@ section:last-child {
      font-size: 0.95rem;
      font-weight: bold;
      font-style: italic;
-     opacity: 50%;
+     opacity: 80%;
+     color: deepskyblue;
 }
 
 #con {
@@ -271,7 +272,7 @@ section:last-child {
      font-size: 0.95rem;
      font-weight: bold;
      font-style: italic;
-     opacity: 50%;
+     opacity: 80%;
      color: #03c04a;
 }
 
@@ -280,7 +281,49 @@ section:last-child {
      font-size: 0.95rem;
      font-weight: bold;
      font-style: italic;
-     opacity: 50%;
-     color: ;
+     opacity: 80%;
+     color: #FA003F;
 }
 
+#sf {
+     border: 1px solid lightblue;
+     display: inline-block;
+     margin-top: 2rem;
+     background-color: rgba(191, 255, 255, 0.3);
+     border-radius: 5px;
+}
+
+.data-grid {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-top: 1.5rem;
+     text-align: center;
+}
+
+.data-card {
+     flex: 1 1 260px;
+     border: 1px solid skyblue;
+     border-radius: 6px;
+     overflow: hidden;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.3)
+}
+
+.data-card-header {
+     padding: 1rem 1.2rem;
+     color: navy;
+}
+
+.data-card-body {
+    padding: 1rem 1.2rem;
+}
+
+.data-card-body p {
+     margin-bottom: 1rem;
+     font-size: 0.95rem;
+}
+
+#ex {
+     font-style: italic;
+     color: rgba(90, 134, 173, 0.75);
+}
