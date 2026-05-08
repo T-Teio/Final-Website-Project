@@ -232,11 +232,12 @@ section:last-child {
 #con {
     background-color: rgba(193, 241, 255, 0.75);
     border-radius: 50%;
-    display: inline-block;
+    display: inline;
     width: 2.2rem;
     height: 2.2rem;
     text-align: center;
     margin-right: 0.5rem; 
+    padding: 0.6rem;
 }
 
 .back-highlight {
@@ -250,21 +251,23 @@ section:last-child {
 #check {
      background-color: rgba(0, 255, 0, 0.25);
      border-radius: 50%;
-     display: inline-block;
+     display: inline;
      width: 2.2rem;
      height: 2.2rem;
      text-align: center;
      margin-right: 0.5rem;
+     padding: 0.6rem;
 }
 
 #sonar {
      background-color: rgba(255, 0, 0, 0.25);
      border-radius: 50%;
-     display: inline-block;
+     display: inline;
      width: 2.2rem;
      height: 2.2rem;
      text-align: center;
      margin-right: 0.5rem;
+     padding: 0.6rem;
 }
 
 .cia-card #subg {
