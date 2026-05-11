@@ -181,6 +181,45 @@
         
         <div id="sf"><p>&#128273; <strong>The 3 Ways to Authenticate</strong>: Something you know (password or PIN) Something you have (smart card, hardware token, code sent to your phone) Something you are (fingerprint, retina scan, voice)</p></div>
         </section>
+
+        <section>
+            <section id="pass">
+            <h4 style="color: deepskyblue;">PASSWORD SECURITY</h4>
+            <h1 style="margin-bottom: 0.5rem;">Password Attacks &amp; How to Defend Against Them</h1>
+            <p style="color: grey; opacity: 90%; max-width: 35rem;">Passwords are the most common - and most commonly attacked - form of authentication. Understanding the attack types is the first step to building a solid defense.</p>
+        
+            <div class="pass-grid">
+                <div class="pass-card">
+                    <h1>&#128296;</h1>
+                    <h3>Brute Force</h3>
+                    <h3 id="pass-meth">METHOD #1</h3>
+                    <p>Software that automatically tests every possible character combination until the correct password is found. Thorough but slow for complex passwords.</p>
+                </div>
+
+                <div class="pass-card">
+                    <h1>&#128214;</h1>
+                    <h3>Dicitonary Attack</h3>
+                    <h3 id="pass-meth">METHOD #2</h3>
+                    <p>Uses a large database of common words, names, and character substitutions (like <span style="color: deepskyblue; background-color: rgba(173, 216, 230, 0.25); display: inline; border-radius: 5px; padding: 3px;">p@ssw0rd</span>) to rapidly guess passwords. Much faster than pure brute force.</p>
+                </div>
+
+                <div class="pass-card">
+                    <h1>&#128167;</h1>
+                    <h3>Password Spraying</h3>
+                    <h3 id="pass-meth">METHOD #3</h3>
+                    <p>Tests one weak password against <em>many</em> accounts. Avoids account lockouts because each account only recieves one inccorect attempt.</p>
+                </div>
+
+                <div class="pass-card">
+                    <h1>&#128450;</h1>
+                    <h3>Credential Stuffing</h3>
+                    <h3 id="pass-meth">METHOD #4</h3>
+                    <p>Uses stolen username/password pairs from a known breach to attack other sites. effective because <strong>52% of people reuse passwords</strong> across acounts.</p>
+                </div>
+            </div>
+
+            
+        </section>
     </main>
 </body>
 </html>
