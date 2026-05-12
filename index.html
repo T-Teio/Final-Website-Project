@@ -161,25 +161,25 @@
         <div class="auth-card">
           <div class="auth-card-header">
             <h1>A</h1>
-            <h3>Access Control</h3>
+              <h3>Access Control</h3>
+            </div>
+            <div class="auth-card-body">
+              <p>What are you allowed to see or reach? Also called authorization or permissions. Not every authenticated user should access everything.</p>
+            </div>
           </div>
-          <div class="auth-card-body">
-            <p>What are you allowed to see or reach? Also called authorization or permissions. Not every authenticated user should access everything.</p>
-          </div>
-        </div>
 
-        <div class="auth-card">
-          <div class="auth-card-header">
-            <h1>A</h1>
-            <h3>Accounting</h3>
+          <div class="auth-card">
+            <div class="auth-card-header">
+              <h1>A</h1>
+              <h3>Accounting</h3>
+            </div>
+            <div class="auth-card-body">
+              <p>Keep track of what happened. Also called auditing. Logs and records let us review activity, detect anomalies, and respond to incidents.</p></p>
+            </div>
           </div>
-          <div class="auth-card-body">
-            <p>Keep track of what happened. Also called auditing. Logs and records let us review activity, detect anomalies, and respond to incidents.</p></p>
           </div>
-        </div>
-        </div>
-        
-        <div id="sf"><p>&#128273; <strong>The 3 Ways to Authenticate</strong>: Something you know (password or PIN) Something you have (smart card, hardware token, code sent to your phone) Something you are (fingerprint, retina scan, voice)</p></div>
+          
+          <div id="sf"><p>&#128273; <strong>The 3 Ways to Authenticate</strong>: Something you know (password or PIN) Something you have (smart card, hardware token, code sent to your phone) Something you are (fingerprint, retina scan, voice)</p></div>
         </section>
 
         <section>
@@ -316,6 +316,17 @@
       </div>
       <div id="sf"><p>&#x26A0;&#xFE0F; <strong>What Hackers Already Know</strong>: Capital are usually at the start, numbers are usually 1 or 2 at the start or end, women often choose personal names, and men often choose hobbies. Don't be predictable - length and variety are your best defense!</p></div>
       </section>
+
+      <section>
+            <section id="hash">
+            <h4 style="color: deepskyblue;">PASSWORD STORAGE</h4>
+            <h1 style="margin-bottom: 0.5rem;">Password Hashing &amp; Salting</h1>
+            <p style="color: grey; opacity: 90%; max-width: 35rem;">Passwords should <strong>never</strong> be stored as plain text. The most common safe storage method is <strong>Hashing</strong> - a one-way mathematical transformation.</p>
+
+      
+            <div id="sf"><p>&#128039; <strong>Where Are Passwords Stored?</strong> On <strong>Windows</strong>: in the SAM registry hive. On <strong>Linux</strong>: in <span style="color: deepskyblue; background-color: rgba(173, 216, 230, 0.25); display: inline; border-radius: 5px; padding: 3px;">/etc/shadow</span> (root access only). The older <span style="color: deepskyblue; background-color: rgba(173, 216, 230, 0.25); display: inline; border-radius: 5px; padding: 3px;">/etc/passwd</span> file is world-readable and not safe for passwords.</p></div>
+      </section>
+
     </main>
 </body>
 </html>
