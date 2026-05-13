@@ -434,3 +434,64 @@ section:last-child {
      border-top-right-radius: 5px;
      display: inline-block;
 }
+
+#ex-container {
+     display: flex;
+     background-color: navy;
+     color: white;
+     border-radius: 5px;
+     justify-content: center;
+     align-items: center;
+}
+
+#card {
+     background-color: mediumblue;
+     border: 2px solid deepskyblue;
+     border-radius: 5px;
+     padding: 15px 50px;
+     transition: background-color 0.0s;
+}
+
+#card:hover {
+     background-color: deepskyblue;
+     color: black;
+}
+
+
+#arrow {
+     color: lightblue;
+     font-size: 25px;
+}
+
+#undertext {
+    color: skyblue;
+    font-size: medium;
+    justify-content: center;
+}
+
+.salt-grid {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-top: 1.5rem;
+}
+
+.salt-card {
+     flex: 1 1 220px;
+     border-radius: 6px;
+     padding: 1.5rem;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.3)
+}
+
+.salt-card h3 {
+     margin-bottom: 0.75rem;
+}
+
+.salt-card ul {
+     padding-left: 1.2rem;
+}
+
+.salt-card li {
+     margin-bottom: 0.4rem;
+     font-size: 0.95rem;
+}

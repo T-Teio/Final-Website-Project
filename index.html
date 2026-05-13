@@ -319,11 +319,48 @@
 
       <section>
             <section id="hash">
-            <h4 style="color: deepskyblue;">PASSWORD STORAGE</h4>
-            <h1 style="margin-bottom: 0.5rem;">Password Hashing &amp; Salting</h1>
-            <p style="color: grey; opacity: 90%; max-width: 35rem;">Passwords should <strong>never</strong> be stored as plain text. The most common safe storage method is <strong>Hashing</strong> - a one-way mathematical transformation.</p>
-
+              <h4 style="color: deepskyblue;">PASSWORD STORAGE</h4>
+              <h1 style="margin-bottom: 0.5rem;">Password Hashing &amp; Salting</h1>
+              <p style="color: grey; opacity: 90%; max-width: 35rem;">Passwords should <strong>never</strong> be stored as plain text. The most common safe storage method is <strong>Hashing</strong> - a one-way mathematical transformation.</p>
+              <div id="ex-container">
+                <p><span id="card">Pa$&nbsp;$word123</span><br><br><span id="undertext">PLAIN TEXT PASSWORD</span></p>
+                <p id="arrow">&#10142;</p>
+                <p><span id="card">SHA-256&nbsp;Algorithm</span><br><br><span id="undertext">HASHING FUNCTION</span></p>
+                <p id="arrow">&#10142;</p>
+                <p><span id="card">e52cac6741,&nbsp;9a9a5f4dcc,&nbsp;3b5aa765d6...</span><br><br><span id="undertext">STORED HASH</span></p>
+                <p id="arrow">&#10142;</p>
+                <p> <span id="card">Hashes&nbsp;MATCH&nbsp;&check;&nbsp;ACCESS&nbsp;GRANTED</span><br><br><span id="undertext">LOGIN COMPARISON</span></p>
+              </div>
       
+            <div class="salt-grid">
+                <div class="salt-card">
+                    <h1>&#128290;</h1>
+                    <h3>What is Hashing</h3>
+                    <h3 id="pass-meth">ONE-WAY CONVERSION</h3>
+                    <p>A mathematical function converts a password into a fixed-length string called a <em>hash</em>. It is one way - the original password cannot be recovered be recovered from the hash alone. Common algorithms: MD5, SHA-256, SHA-512.</p>
+                </div>
+
+                <div class="salt-card">
+                    <h1>&#127752;</h1>
+                    <h3>Rainbow Tables</h3>
+                    <h3 id="pass-meth">ATTACK METHOD</h3>
+                    <p>A massive precomputed file of hash values for every possible password. Attackers look up a stolen hash to instantly find the matching password - no cracking required.</p>
+                </div>
+
+                <div class="salt-card">
+                    <h1>&#129474;</h1>
+                    <h3>Salting</h3>
+                    <h3 id="pass-meth">DEFENSE METHOD</h3>
+                    <p>A unique random string (a <em>salt</em>) is added to each password before hashing. Even identical passwords produce different hashes, completely defeating rainbow table lookups.</p>
+                </div>
+
+                <div class="salt-card">
+                    <h1>&#128187;</h1>
+                    <h3>Pass-the-Hash</h3>
+                    <h3 id="pass-meth">ADVANCED ATTACK</h3>
+                    <p>The attacker steals the hash directly from storage (Windows SAM hive or Linux <span style="color: deepskyblue; background-color: rgba(173, 216, 230, 0.25); display: inline; border-radius: 5px; padding: 3px;">/etc/shadow</span>) and uses it to authenticate - withought ever knowing the original password.</p>
+                </div>
+            </div>
             <div id="sf"><p>&#128039; <strong>Where Are Passwords Stored?</strong> On <strong>Windows</strong>: in the SAM registry hive. On <strong>Linux</strong>: in <span style="color: deepskyblue; background-color: rgba(173, 216, 230, 0.25); display: inline; border-radius: 5px; padding: 3px;">/etc/shadow</span> (root access only). The older <span style="color: deepskyblue; background-color: rgba(173, 216, 230, 0.25); display: inline; border-radius: 5px; padding: 3px;">/etc/passwd</span> file is world-readable and not safe for passwords.</p></div>
       </section>
 
