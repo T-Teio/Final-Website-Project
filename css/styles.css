@@ -442,6 +442,8 @@ section:last-child {
      border-radius: 5px;
      justify-content: center;
      align-items: center;
+     min-width: 80rem;
+     min-height: 7rem;
 }
 
 #card {
