@@ -370,6 +370,64 @@
               <h1 style="margin-bottom: 0.5rem;">Methods of Authentication</h1>
               <p style="color: grey; opacity: 90%; max-width: 35rem;">Modern security gos far beyond passwords. Here are the key authentication methods used in real-world systems - and how combining them creates much stronger protection.</p>
             
+              <div class="meth-grid">
+                <div class="meth-card">
+                    <h1>&#128179;</h1>
+                    <h3>Smart Cards</h3>
+                    <h3 id="pass-meth">SOMETHING YOU HAVE</h3>
+                    <p>Cards with an embedded chip automatically recognized by an authenticating device. Proximity readers can detect them in a pocket or purse withought physical contact.</p>
+                </div>
+
+                <div class="meth-card">
+                    <h1>&#x1F310;</h1>
+                    <h3>Digital Cirtificates</h3>
+                    <h3 id="pass-meth">SOMETHING YOU HAVE</h3>
+                    <p>Servers use certificates to authenticate with browsers (the &#128274; padlock in your address bar). Issued by trusted third-party Cirtificate Authorities (CAs).</p>
+                </div>
+
+                <div class="meth-card">
+                    <h1>&#128070;</h1>
+                    <h3>Biometrics</h3>
+                    <h3 id="pass-meth">SOMETHING YOU ARE</h3>
+                    <p>Uses measurable physical characteristics: fingerprint, retina scan, voice, or even typing speed. Disney World uses finger biometrics for multi-day pass verification.</p>
+                </div>
+
+                <div class="meth-card">
+                    <h1>&#128273;</h1>
+                    <h3>Hardware Tokens (OTP)</h3>
+                    <h3 id="pass-meth">SOMETHING YOU HAVE</h3>
+                    <p>A physical device generates a new One-Time Password (OTP) every 60 seconds. Since each OTP is used exactly once, intercepting it is useless to an attacker.</p>
+                </div>
+                <div class="meth-card">
+                    <h1>&#128241;</h1>
+                    <h3>Two-Facter Auth (2FA)</h3>
+                    <h3 id="pass-meth">KNOW + HAVE</h3>
+                    <p>Combines two factors - such as a password <em>plus</em> a PIN sent to your phone (like Google 2-Step Verification). One stolen factor alone is useless.</p>
+                </div>
+
+                <div class="meth-card">
+                    <h1>&#128737;</h1>
+                    <h3>Multi-Factor Auth (MFA)</h3>
+                    <h3 id="pass-meth">TWO OR MORE FACTORS</h3>
+                    <p>Uses two or more different authentication factors. The gold standard for account security - combining know, have, and/or are dramatically reduces breach risk.</p>
+                </div>
+
+                <div class="meth-card">
+                    <h1>&#x1f517;</h1>
+                    <h3>Single Sign-On (SSO)</h3>
+                    <h3 id="pass-meth">ONE LOGIN, MANY RESOURCES</h3>
+                    <p>One authentication grants access to many servers or services. Used widely in schools and businesses to reduce password fatigue while maintaining securtiy.</p>
+                </div>
+
+                <div class="meth-card">
+                    <h1>&#128221;</h1>
+                    <h3>Passphrases</h3>
+                    <h3 id="pass-meth">SOMETHING YOU KNOW</h3>
+                    <p>A string of multiple words offers more security than a complex password <em>and</em> is easier to remember. Example:"The 3 little pigs say do not forget the bacon!"</p>
+                </div>
+            </div>
+
+
             <div id="sf"><p>&#x1F517; <strong>Useful Resources</strong>: Check if your credentials have been exposed at <a href="https://haveibeenpwned.com/">HaveIBeenPwned.com</a> &bull; Learn more about the NIST Cybersecurity Framework at <a href="https://www.nist.gov/cyberframework">nist.gov/cyberframework</a></div>
       </section>
 
