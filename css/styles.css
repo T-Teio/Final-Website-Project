@@ -555,3 +555,23 @@ section:last-child {
      margin-bottom: 0.4rem;
      font-size: 0.95rem;
 }
+
+#funny-box-thing {
+     margin-top: 2rem;
+     background-color: navy;
+     color: skyblue;
+     display: inline-block;
+     justify-content: center;
+     align-items: center;
+     border-radius: 5px;
+     padding: 1rem 2rem;
+}
+#funny-box-thing h2{
+     justify-content: left;
+     padding: 1rem 2rem;
+}
+
+#box-p p{
+     color: lightblue;
+     padding: 0.5rem 2rem;
+}
