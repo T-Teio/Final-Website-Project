@@ -446,7 +446,32 @@
             <div id="sf"><p>&#x1F517; <strong>Useful Resources</strong>: Check if your credentials have been exposed at <a href="https://haveibeenpwned.com/">HaveIBeenPwned.com</a> &bull; Learn more about the NIST Cybersecurity Framework at <a href="https://www.nist.gov/cyberframework">nist.gov/cyberframework</a></div>
       </section>
 
-
+      <section id="contact">
+        <form action="mailto:student@sllboces.org" method="POST">
+        <label for="fname">FIRST NAME:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Your First Name" required><br>
+        <label for="lname">LAST NAME:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Your Last Name" required><br>
+        <label for="email">EMAIL ADDRESS</label><br>
+        <input type="email" id="mail" name="mail" placeholder="Example@email.com" required><br>
+        <label for="top">QUESTION TOPIC</label><br>
+        <select>
+          <option value="cia">CIA Triad</option>
+          <option value="data">Data States</option>
+          <option value="auth">Auth (AAA)</option>
+          <option value="pass">Passwords</option>
+          <option value="hash">Hashing</option>
+          <option value="meth">Auth Methods</option>
+        </select><br>
+        <label for="com">YOUR QUESTION OR COMMENT</label><br>
+        <textarea name="com" id="com" rows="2"></textarea><br>
+        <button type="submit">Send Message &#9993;</button>
+    </form>
+      </section>
+      
     </main>
+    <footer>
+      
+    </footer>
 </body>
 </html>
