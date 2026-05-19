@@ -575,3 +575,42 @@ section:last-child {
      color: lightblue;
      padding: 0.5rem 2rem;
 }
+
+form {
+     background-color: rgb(13, 13, 127);
+     color: skyblue;
+     border: 1px solid lightblue;
+     border-radius: 5px;
+     padding: 2rem 2rem;
+}
+
+form input {
+     margin-bottom: 20px;
+     background-color: rgb(31, 31, 167);
+     color: white;
+     border-radius: 5px;
+     border: 1px solid lightblue;
+}
+
+form select {
+     margin-bottom: 20px;
+     background-color: rgb(31, 31, 167);
+     color: white;
+     border: 1px solid lightblue;
+     border-radius: 5px;
+}
+
+form textarea {
+     margin-bottom: 10px;
+     background-color: rgb(31, 31, 167);
+     color: white;
+     border: 1px solid lightblue;
+     border-radius: 5px;
+}
+
+form button {
+     background-color: deepskyblue;
+     border: 1px solid deepskyblue;
+     border-radius: 5px;
+     padding: 0.5rem 0.5rem;
+}

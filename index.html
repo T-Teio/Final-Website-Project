@@ -17,7 +17,7 @@
                 <li><a href="#pass">Passwords</a></li>
                 <li><a href="#hash">Hashing</a></li>
                 <li><a href="#authm">Auth Methods</a></li>
-                <li><a href="#con">Contact</a></li>
+                <li><a href="#cont">Contact</a></li>
             </ul>
         </nav>
   </header>
@@ -446,8 +446,11 @@
             <div id="sf"><p>&#x1F517; <strong>Useful Resources</strong>: Check if your credentials have been exposed at <a href="https://haveibeenpwned.com/">HaveIBeenPwned.com</a> &bull; Learn more about the NIST Cybersecurity Framework at <a href="https://www.nist.gov/cyberframework">nist.gov/cyberframework</a></div>
       </section>
 
-      <section id="contact">
-        <form action="mailto:student@sllboces.org" method="POST">
+      <section id="cont">
+        <h4 style="color: deepskyblue;">GET IN TOUCH</h4>
+        <h1 style="margin-bottom: 0.5rem;">Contact Us</h1>
+        <p style="color: grey; opacity: 90%; max-width: 35rem;">Have a question about cybersecurity concepts covered on this page? Use the form below to send us a message and we'll be happy to help!</p>
+        <form action="mailto:cte-lucas.cantwell@sllboces.org" method="POST">
         <label for="fname">FIRST NAME:</label><br>
         <input type="text" id="fname" name="fname" placeholder="Your First Name" required><br>
         <label for="lname">LAST NAME:</label><br>
@@ -455,7 +458,8 @@
         <label for="email">EMAIL ADDRESS</label><br>
         <input type="email" id="mail" name="mail" placeholder="Example@email.com" required><br>
         <label for="top">QUESTION TOPIC</label><br>
-        <select>
+        <select name="sel" id="sel">
+          <option value="blank">- Select a Topic -</option>
           <option value="cia">CIA Triad</option>
           <option value="data">Data States</option>
           <option value="auth">Auth (AAA)</option>
@@ -464,7 +468,7 @@
           <option value="meth">Auth Methods</option>
         </select><br>
         <label for="com">YOUR QUESTION OR COMMENT</label><br>
-        <textarea name="com" id="com" rows="2"></textarea><br>
+        <textarea name="com" id="com" rows="2" placeholder="Type your question here..."></textarea><br>
         <button type="submit">Send Message &#9993;</button>
     </form>
       </section>
