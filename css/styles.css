@@ -614,3 +614,34 @@ form button {
      border-radius: 5px;
      padding: 0.5rem 0.5rem;
 }
+
+footer {
+     background-color: navy;
+}
+
+footer h3 {
+     color: deepskyblue;
+}
+
+footer p {
+     color: rgba(211, 211, 211, 0.5);
+     padding-bottom: 0.5rem;
+}
+
+#quick {
+     padding-bottom: 1rem;
+}
+.quick-links {
+     list-style: none;
+     display: flex;
+     gap: 2rem;
+}
+
+.quick-links a {
+     color: rgba(211, 211, 211, 0.8);
+     text-decoration: none;
+     font-size: 1rem;
+     opacity: 80%;
+}
+
+
